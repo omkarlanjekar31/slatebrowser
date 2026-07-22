@@ -1,0 +1,34 @@
+{
+  "appId": "com.omkar.slatebrowser",
+  "files": [
+    "dist-electron",
+    "dist-react",
+    "!node_modules/@openai/agents-core/**",
+    "!node_modules/@scure/**"
+  ],
+  "extraResources": [
+    "dist-electron/preload.cjs",
+    "dist-electron/preloadpratice.cjs",
+    "src/electron/assets/**",
+    "src/electron/electronpublic/**"
+  ],
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"],
+    "icon": "desktopIcon.ico"
+  },
+  "productName": "Slate Browser",
+  "msi": {
+    "oneClick": false,
+    "perMachine": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "artifactName": "Slate Browser Setup ${version}.${ext}"
+  }
+}

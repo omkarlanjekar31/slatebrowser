@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slate Browser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 64px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #6b7c93;
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            width: 600px;
+            max-width: 90%;
+            background: white;
+            border-radius: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            transition: 0.3s ease;
+        }
+
+        .search-box:hover {
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 16px;
+            color: #333;
+            background: transparent;
+        }
+
+        .search-box input::placeholder {
+            color: #999;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 13px;
+            color: #8c9aa9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">Slate Browser</div>
+        <div class="tagline">Fast. Clean. Modern browsing.</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search or enter website URL">
+        </div>
+    </div>
+
+    <div class="footer">
+        Slate Browser © 2026
+    </div>
+
+</body>
+</html>

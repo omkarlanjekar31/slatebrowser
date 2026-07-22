@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "outDir": "../../dist-electron",
+    "skipLibCheck": true,
+    "types": ["../../types","../../slatebrowserdb","../../aichatdb"],
+    "typeRoots": ["../../node_modules/@types", "./global"]
+  }
+}
